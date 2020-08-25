@@ -21,6 +21,10 @@ ul {
     list-style: none;
 }
 
+.body {
+    background-color: #f1f1f1;
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -106,6 +110,7 @@ ul {
 }
 
 .services {
+    margin-bottom: 100px;
     outline: 1px solid red;
 }
 
@@ -116,8 +121,49 @@ ul {
 
 .service-card {
     width: 48%;
+    background-color: white;
 }
 
 .service-card:nth-of-type(odd) {
     margin-right: 4%
+}
+
+.service-description {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature {
+    width: 22%;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.feature-description {
+    font-size: 20px;
+    line-height: 2;
+    outline: 1px solid red;
+}
+
+.locations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.location {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.location-description {
+    
+    padding: 0 30px;
 }
