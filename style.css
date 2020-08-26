@@ -62,6 +62,7 @@ ul {
 
 .special {
     display: flex;
+    justify-content: space-between;
     outline: 1px solid blue;
     margin-bottom: 50px;
 
@@ -75,7 +76,6 @@ ul {
 
 .special-title {
     font-size: 40px;
-    outline: 1px solid yellow;
     margin: 0;
 
 }
@@ -83,13 +83,17 @@ ul {
 .special-input {
     padding: 25px 10px;
     margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .special-offer {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 55%;
+    background-color: #f1f1f1;
     background: url("img/22.jpg") no-repeat right bottom;
+    overflow: hidden;
 }
 
 .reservation-action {
@@ -101,6 +105,9 @@ ul {
 
 .btn {
     padding: 20px;
+    border: 1px solid #f0bf5f;
+    border-radius: 10px;
+    background-color: #f0bf5f;
 }
 
 .about {
@@ -122,10 +129,17 @@ ul {
 .service-card {
     width: 48%;
     background-color: white;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
 }
 
 .service-card:nth-of-type(odd) {
     margin-right: 4%
+}
+
+.service-card:nth-of-type(-n + 2) {
+    margin-bottom: 30px;
 }
 
 .service-description {
@@ -143,6 +157,9 @@ ul {
     width: 22%;
     background-color: white;
     margin-bottom: 40px;
+    padding: 50px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
 }
 
 .feature-description {
@@ -158,12 +175,23 @@ ul {
 }
 
 .location {
-    width: 30%;
+    width: 32%;
     margin-bottom: 40px;
     background-color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .location-description {
     
     padding: 0 30px;
+}
+
+.location-btn {
+    color: #cc9933;
+    padding: 15px 20px;
+    border: 1px solid #cc9933;
+    border-radius: 10px;
+    background: white;
 }
