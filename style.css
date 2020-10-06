@@ -2,10 +2,30 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Muller Bold';
+    src: url('fonts/MullerBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Regular';
+    src: url('fonts/MullerRegular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "Muller Regular", sans-serif, Helvetica;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
 }
 
 a {
@@ -34,6 +54,15 @@ ul {
     margin-bottom: 60px;
 }
 
+.header-logo {
+    margin-right: 30px;
+}
+
+.header-phone {
+    font-size: 22px;
+    font-family: 'Muller Bold', sans-serif, Helvetica;
+}
+
 .header-welcome {
     display: flex;
     align-items: center;
@@ -42,6 +71,14 @@ ul {
 
 .header-login {
     margin-left: auto;
+    padding-right: 10px;
+    
+}
+
+.header-link {
+    font-size: 16px;
+    font-family: 'Muller Regular', sans-serif, Helvetica;
+    color: #f0bf5f;
 }
 
 .header-navigation {
@@ -49,23 +86,43 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    min-height: 60px;
-    outline: 1px solid red;
+    min-height: 70px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .header-navigation-list {
     display: flex;
     justify-content: space-between;
     width: 60%;
-    outline: 1px solid green;
+}
+
+.header-navigation-item {    
+    color: #333333;
+}
+
+.header-search {
+    padding: 15px 20px;
+    width: 350px;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.header-search::placeholder {
+    color: #bebebe;
 }
 
 .special {
     display: flex;
     justify-content: space-between;
-    outline: 1px solid blue;
     margin-bottom: 50px;
 
+}
+
+.special-input::placeholder {
+    color: #999999
 }
 
 .special-reservation {
@@ -76,13 +133,19 @@ ul {
 
 .special-title {
     font-size: 40px;
+    line-height: 32px;
     margin: 0;
+    margin-left: 50px;
 
 }
+
 
 .special-input {
     padding: 25px 10px;
     margin: 10px 0;
+    font-family: 'Muller Regular', sans-serif, Helvetica;
+    font-size: 16px;
+    line-height: 32px;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -90,11 +153,35 @@ ul {
 .special-offer {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    justify-content: space-between;
+    width: 51%;
     background-color: #f1f1f1;
     background: url("img/22.jpg") no-repeat right bottom;
     overflow: hidden;
 }
+
+.special-text {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    
+}
+
+.special-lux {
+    color: white;
+    font-family: 'Muller Regular', sans-serif, Helvetica;
+    font-size: 66px;
+    line-height: 58px;
+}
+
+.special-details {
+    color: #f0bf5f;
+}
+
+.special-price {
+    font-size: 35px;
+}
+
 
 .reservation-action {
     display: flex;
@@ -104,16 +191,39 @@ ul {
 }
 
 .btn {
-    padding: 20px;
-    border: 1px solid #f0bf5f;
+    padding: 25px 30px;
+    margin-right: 25px;
+    border: 1px solid #cc9933;
     border-radius: 10px;
-    background-color: #f0bf5f;
+    background-color: #cc9933;
 }
+
+.btn-special {
+    font-family: 'Muller Bold', sans-serif, Helvetica;
+    color: white;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.reservation-price {
+    color: #cc9933;
+}
+
+.reservation-available {
+    color: #999999;
+}
+
 
 .about {
     font-style: 18px;
-    line-height: 3;
+    line-height: 2;
     margin-bottom: 50px;
+}
+
+
+.about-description {
+    margin: 0 0 0 50px;
+    outline: 1px solid green;
 }
 
 .services {
@@ -127,7 +237,7 @@ ul {
 }
 
 .service-card {
-    width: 48%;
+    width: 49%;
     background-color: white;
     overflow: hidden;
     border: 1px solid #f1f1f1;
@@ -135,16 +245,20 @@ ul {
 }
 
 .service-card:nth-of-type(odd) {
-    margin-right: 4%
+    margin-right: 2%
 }
 
 .service-card:nth-of-type(-n + 2) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 22px;
+    color: #cc9933;
 }
 
 .service-description {
-    font-size: 20px;
-    line-height: 2;
+    margin-left: 50px;
 }
 
 .features-container {
@@ -154,17 +268,17 @@ ul {
 }
 
 .feature {
-    width: 22%;
+    width: 23.5%;
     background-color: white;
-    margin-bottom: 40px;
-    padding: 50px;
+    margin-bottom: 20px;
+    padding: 40px 40px 0 40px;
     border: 1px solid #f1f1f1;
     border-radius: 10px;
 }
 
 .feature-description {
-    font-size: 20px;
-    line-height: 2;
+    font-size: 18px;
+    line-height: 1.5;
     outline: 1px solid red;
 }
 
